@@ -170,13 +170,13 @@ RETURN = '''
 
 from traceback import format_exc
 from ansible.module_utils.basic import AnsibleModule
-from ansible_collections.ibm.spectrum_virtualize.plugins.module_utils.ibm_svc_utils import IBMSVCRestApi, svc_argument_spec, get_logger
-from ansible.module_utils._text import to_native
+#from ansible_collections.ibm.spectrum_virtualize.plugins.module_utils.ibm_svc_utils import IBMSVCRestApi, svc_argument_spec, get_logger
+#from ansible.module_utils._text import to_native
 
 
 class IBMSVCvdisk(object):
     def __init__(self):
-        argument_spec = svc_argument_spec()
+        argument_spec = svc_argum         ent_spec()
 
         argument_spec.update(
             dict(
